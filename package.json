@@ -4,5 +4,12 @@
     "styl": "stylus --use nib --compress --watch lib/app.styl --out public/css",
     "serve": "http-server .",
     "babel": "babel --watch lib --out-dir public"
+  },
+  "dependencies": {
+    "babel": "^5.5.5",
+    "http-server": "^0.8.0",
+    "jade": "^1.10.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.51.1"
   }
 }
