@@ -5,7 +5,7 @@ var page = window.page;
 
 // ya tenemos page
 
-page('/', home);
+page('/', restrict, home);
 page('/battle', battle);
 page('/avengers', avengers);
 page('/signin', signin);
@@ -16,11 +16,11 @@ page('*', function () {
 function restrict(ctx, next) {
   console.log('RESTRICTING');
   console.log('Context :' + JSON.stringify(ctx));
-  if (!ctx.params.username) {
-    page('/signin');
-  } else {
-    next();
-  }
+  // if (! ctx.params.username) {
+  //   page('/signin')
+  // } else {
+  next();
+  // }
 }
 
 function home(ctx, next) {
