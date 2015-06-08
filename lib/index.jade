@@ -1,9 +1,41 @@
 doctype html
 html(lang="es")
-    head
-        meta(charset="UTF-8")
-        title Marvel Game Card
-        link(rel="stylesheet", href="./public/css/app.css")
-    body
-        include ./layout/template.jade
-    
+  head
+    meta(charset="UTF-8")
+    title Marvel Game Card
+    link(rel="stylesheet", href="./public/css/app.css")
+  body
+    include ./layout/template.jade
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src='https://cdn.rawgit.com/visionmedia/page.js/master/page.js')
+    //- script(src='https://cdn.rawgit.com/visionmedia/superagent/master/lib/client.js')
+    script(src='public/util/routes.js')
+
+
+
+        //- doctype html
+        //- html(lang="es")
+        //- head
+        //-   meta(charset="UTF-8")
+        //-   title Marvel Card Game
+        //-   link(rel="stylesheet", href="./public/css/app.css")
+        //- body
+        //-   #marvel-card-game
+        //-     section.Layout
+        //-       section.Layout-main
+        //-         .Layout-status
+        //-           form.CharacterForm
+        //-             input.CharacterForm-name(type="text", placeholder="Agrega un personaje")
+        //-             button Agregar
+        //-           span.CharacterForm-message
+
+        //-         .Layout-battle
+        //-           .Battle
+        //-             - clase = ""
+        //-             .Battle-antagonist
+        //-             .Battle-player
+        //-   script(src='https://cdn.rawgit.com/visionmedia/page.js/master/page.js')
+        //-   script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+        //-   script(src="public/util/marvel-api.js")
+        //-   script(src='public/util/routes.js')
+        //-   script(src="public/app.js")
